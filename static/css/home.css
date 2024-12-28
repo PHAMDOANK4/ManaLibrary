@@ -1,0 +1,149 @@
+div.columns{
+    background-color: #1a1a2e;
+}
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #1a1a2e;
+    color: #ffff;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #24243e /* Updated background color */
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111111;
+}
+p {
+    font-size: 48px;
+}
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/*
+.column {
+    flex: 1;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin: 0 10px;
+    border-radius: 5px;
+}*/
+.column h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e43f5a;
+}
+.book button {
+    display: block;
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    bottom: 0;
+    position: absolute;
+    border-radius: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+.book {
+    position: relative;
+    align-items: center;;
+    margin: auto;
+    margin-bottom: 20px;
+    align-self: center;
+    background-color: #24243e;
+    border-radius: 45px;
+    overflow: hidden;
+    width: 80%;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.book:hover {
+    transform: scale(1.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.book h3 {
+    
+    font-size: 18px;
+    display: block;
+}
+.book p {
+    font-size: 14px;
+    color: #555;
+}
+.search-container {
+    float: right;
+    margin-right: 10px;
+}
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+.search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-left: 5px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.search-container button:hover {
+    background: #ccc;
+}
+.columns {
+    display: flex; /* Sử dụng Flexbox để bố trí các cột */
+    justify-content: space-between; /* Căn giữa các cột với khoảng cách đều */
+    padding: 0 40px; /* Thêm padding cho lề bên trái và bên phải */
+    gap: 20px; /* Khoảng cách giữa các cột */
+}
+
+.column {/* Sử dụng Flexbox để bố trí nội dung bên trong cột */
+    width: 25%; /* Đặt độ rộng cho mỗi cột (có thể điều chỉnh theo ý muốn) */
+    margin: 0 1%; /* Khoảng cách giữa các cột */
+    background-color:#1a1a2e; /* Màu nền cho cột */
+    padding: 10px; /* Padding cho cột */
+    border: none; /* Đường viền cho cột */
+    border-radius: 5px; /* Bo góc cho cột */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước cột */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column; /* Chuyển sang bố trí theo chiều dọc trên màn hình nhỏ */
+    }
+    .column {
+        width: 100%; /* Đặt độ rộng 100% cho các cột trên màn hình nhỏ */
+        margin: 10px 0; /* Khoảng cách giữa các cột theo chiều dọc */
+    }
+}
