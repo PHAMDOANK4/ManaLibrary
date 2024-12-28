@@ -142,7 +142,7 @@ def get_books_popular():
         cursor = connection.cursor(dictionary=True)
 
         #Query the db
-        cursor.execute("SELECT * FROM Sach ORDER BY RAND() LIMIT 3")
+        cursor.execute("SELECT * FROM Sach ORDER BY RAND() LIMIT 5")
         results = cursor.fetchall()
         return jsonify(results), 200
     except mysql.connector.Error as err:

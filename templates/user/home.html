@@ -7,26 +7,29 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
 </head>
 <body>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li class="dropdown">
-            <a href="#Manage" class="dropbtn">Manage</a>
-            <div class="dropdown-content">
-                <a href="#manage-students">Students</a>
-                <a href="#manage-books">Book</a>
-                <a href="#create-borrow">Library Card</a>
-                <a href="#create-return">Return Book</a>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#Manage" class="dropbtn">Manage</a>
+                <div class="dropdown-content">
+                    <a href="#manage-students">Students</a>
+                    <a href="#manage-books">Book</a>
+                    <a href="#create-borrow">Library Card</a>
+                    <a href="#create-return">Return Book</a>
+                </div>
+            </li>
+            <li><a href="#Add">Add</a></li>
+            <li><a href="#Delete">Delete</a></li>
+            <li><a href="#Logout" id="logout_btn">Logout</a></li>
+            <li><a href="#Logout" id="logout_btn">Hello {{ username }}</a></li>
+            <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <button type="submit">Search</button>
             </div>
-        </li>
-        <li><a href="#Add">Add</a></li>
-        <li><a href="#Delete">Delete</a></li>
-        <li><a href="#Logout" id="logout_btn">Logout</a></li>
-        <li><a href="#Logout" id="logout_btn">Hello {{ username }}</a></li>
-        <div class="search-container">
-            <input type="text" placeholder="Search..">
-            <button type="submit">Search</button>
-        </div>
-    </ul>
+        </ul>
+    </div>
     <div class="columns">
         <div class="column community">
             <h2>Community</h2>
